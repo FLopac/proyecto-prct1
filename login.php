@@ -43,9 +43,9 @@
                 <div class="px-lg-5 pt-lg-4 pb-lg-3 p-4 w-100 mb-auto">
                     <img src="./images/php-1.svg" class="img-fluid rounded mx-auto d-block" width="200" height="200"">
                 </div>
-                
+
                 <div class="px-lg-5 py-lg-4 p-4 w-100 align-self-center">
-                    <h1 class="fw-bold mb-4">Bienvenido de vuelta</h1>
+                    <h1 class="fw-bold mb-4">Bienvenido de vuelta!</h1>
                     <form method="POST" action="./model/logueo.php">
                       <div class="mb-4">
                         <label class="form-label fw-bold">Email</label>
@@ -59,7 +59,7 @@
                     </form>
                     <!-- ALERTAS  -->
                     <div>
-                      <?php 
+                      <?php
                           if(isset($_GET['mensaje']) and $_GET['mensaje'] == 'error'){
                       ?>
                       <div class="alert alert-danger mt-5 text-center" role="alert">

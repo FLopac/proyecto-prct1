@@ -10,12 +10,12 @@
     if(!isset($usuario)){
         header("location: ../login.php");
     }else{
-?>  
-  
+?>
+
 <div class="container mt-5">
   <div class="titulo_usuario">
   <?php
-          echo "<h1>Bienvenido <b>$usuario</b></h1>";
+          echo "<h1>Bienvenido <b>$usuario</b> Te estabamos esperando</h1>";
       }
   ?>
   </div>
@@ -32,7 +32,7 @@
         </ul>
       </div>
     <!-- INICIO ALERTA -->
-    <?php 
+    <?php
       if(isset($_GET['mensaje']) and $_GET['mensaje'] == 'falta'){
     ?>
     <div class="alert alert-danger" role="alert">
@@ -41,8 +41,8 @@
     <?php
       }
     ?>
-    
-    <?php 
+
+    <?php
       if(isset($_GET['mensaje']) and $_GET['mensaje'] == 'registrado'){
     ?>
     <div class="alert alert-success" role="alert">
@@ -51,8 +51,8 @@
     <?php
       }
     ?>
-    
-    <?php 
+
+    <?php
       if(isset($_GET['mensaje']) and $_GET['mensaje'] == 'error'){
     ?>
     <div class="alert alert-danger" role="alert">
@@ -61,8 +61,8 @@
     <?php
       }
     ?>
-    
-    <?php 
+
+    <?php
       if(isset($_GET['mensaje']) and $_GET['mensaje'] == 'editado'){
     ?>
     <div class="alert alert-success" role="alert">
@@ -71,8 +71,8 @@
     <?php
       }
     ?>
-    
-    <?php 
+
+    <?php
       if(isset($_GET['mensaje']) and $_GET['mensaje'] == 'eliminado'){
     ?>
     <div class="alert alert-success" role="alert">
@@ -83,7 +83,7 @@
     ?>
 
     <!-- FIN ALERTA -->
-      
+
       <div class="card">
         <div class="card-header">
           Lista de personas
@@ -148,5 +148,3 @@
 </div>
 
 <?php include 'template/footer.php'?>
-
-   
